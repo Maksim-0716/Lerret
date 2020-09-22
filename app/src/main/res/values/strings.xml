@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="Play">Играть</string>
+    <string name="medium">Средний уровень</string>
+    <string name="Hard">Сложный уровень</string>
+    <string name="Easy">Лёгкий уровнь</string>
+    <string name="Select">Выберете уровень сложности</string>
+    <string name="name">Name</string>
+    <string name="Settings">Button</string>
+    <string name="Input">TextView</string>
+    <string name="nameInput">Name</string>
+    <string name="textview">TextView</string>
+
 </resources>
