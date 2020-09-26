@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         EditText Editpass=findViewById(R.id.eT_pass);
         String pass=Editpass.getText().toString();
         String login=Editlogin.getText().toString();
-        if ((login.equals("максим"))&&(pass.equals("123"))){
+        if ((login.equals("1111"))&&(pass.equals("123"))){
             Intent intent_to_start_game=new Intent(MainActivity.this,DifficultActivity.class);
             intent_to_start_game.putExtra("flogin", Editlogin.getText().toString());
             startActivity(intent_to_start_game);

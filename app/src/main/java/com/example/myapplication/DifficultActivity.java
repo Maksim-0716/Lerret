@@ -20,7 +20,7 @@ public class DifficultActivity extends AppCompatActivity {
     }
 
     public void Easy(View v) {
-        Intent intent_to_start_easy_level = new Intent(DifficultActivity.this, mapone.class);
+        Intent intent_to_start_easy_level = new Intent(DifficultActivity.this, map1.class);
         startActivity(intent_to_start_easy_level);
     }
 
