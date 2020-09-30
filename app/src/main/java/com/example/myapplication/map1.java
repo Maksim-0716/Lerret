@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class map1 extends AppCompatActivity {
-    int lvl = 10;
+    int lvl = 1;
     int Result;
 
     @Override
