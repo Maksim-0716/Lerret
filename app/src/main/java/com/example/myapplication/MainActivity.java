@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,14 +21,13 @@ public class MainActivity extends AppCompatActivity {
         EditText Editpass=findViewById(R.id.eT_pass);
         String pass=Editpass.getText().toString();
         String login=Editlogin.getText().toString();
-        if ((login.equals("1111"))&&(pass.equals("123"))){
+        if ((login.equals("1"))&&(pass.equals("1"))){
             Intent intent_to_start_game=new Intent(MainActivity.this,DifficultActivity.class);
             intent_to_start_game.putExtra("flogin", Editlogin.getText().toString());
             startActivity(intent_to_start_game);
         }
         else{
-            EditText Error=findViewById(R.id.er);
-            Error.setText("вы ввели неправильный логин или пароль");
+            Toast.makeText(this, "Неправилный логин или пароль", Toast.LENGTH_SHORT).show();
         }
 
 

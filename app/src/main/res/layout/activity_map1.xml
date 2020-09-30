@@ -5,17 +5,19 @@
     android:id="@+id/cl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/firstlvl"
+    android:background="@drawable/map"
     android:onClick="next"
     tools:context=".map1">
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="44dp"
+        android:background="@drawable/uu"
         android:onClick="back"
-        android:text="back"
+        android:text="Назад"
+        android:textColor="#E2919B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.396"
@@ -23,39 +25,57 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="44dp"
+        android:background="@drawable/uu"
         android:onClick="next"
-        android:text="next"
+        android:text="Ответить"
+        android:textColor="#E2919B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.792"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/player"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="211dp"
-        android:layout_height="30dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="379dp" />
+        android:id="@+id/example"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="396dp"
+        android:background="@drawable/uu"
+        android:textColor="#B46CBC"
+        app:drawableTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/example1"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="424dp"
+        android:background="@drawable/uu"
+        android:ems="10"
+        android:hint="Введите ответ"
+        android:inputType="textPersonName"
+        android:textColor="#CC76D3"
+        android:textColorHint="#B46CBC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteY="414dp" />
+        android:layout_marginBottom="52dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rocket1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

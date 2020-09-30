@@ -16,12 +16,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/example"
+            android:id="@+id/answer"
             android:layout_width="match_parent"
             android:layout_height="61dp" />
 
         <EditText
-            android:id="@+id/answer"
+            android:id="@+id/answer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"

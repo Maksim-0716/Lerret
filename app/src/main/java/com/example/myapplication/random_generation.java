@@ -8,8 +8,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Random;
-
 public class random_generation extends AppCompatActivity {
     int answer;
 
@@ -18,7 +16,7 @@ public class random_generation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_generation);
 
-        TextView Example=findViewById(R.id.example);
+        TextView Example=findViewById(R.id.answer);
         int random_number2= 0 + (int) (Math.random() * 10); // Генерация 2-го числа
         int random_number1 = 0 + (int) (Math.random() * 10); // Генерация 1-го числа
        Example.setText(random_number2 + " + " + random_number1);
@@ -27,8 +25,8 @@ public class random_generation extends AppCompatActivity {
 
     }
     public void reply(View v){
-        TextView Example=findViewById(R.id.example);
-        EditText Answer=findViewById(R.id.answer);
+        TextView Example=findViewById(R.id.answer);
+        EditText Answer=findViewById(R.id.answer1);
         String ex=Example.getText().toString();
         String ans=Answer.getText().toString();
         if (Answer.getText().toString().equals(Integer.toString(answer))) {
